@@ -1,0 +1,139 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+#wrap{width: 100%;
+            height: auto;}
+header{width: 100%;
+border-bottom: 1px solid #ccc;
+        height: 50px;}
+section{width: 100%; 
+            height: 500px;
+}
+.header_logo{width: 150px; height: 50px;
+        float: left;      
+    line-height: 50px;}
+
+
+nav{width: 1200px; margin: 0 auto;
+}
+.nav_in{width: 100%;
+    height: 50px;}
+.nav_in li{float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 20px;
+            width: 220px;}
+.nav_in li.on{background-color: #ccc;
+                transition: 1s all;
+
+}
+.nav_in li a{color: black;}
+.main{width: 100%;}
+
+.page01_se{
+background:url(/img/cherryjem.jpg);
+background-size: cover;
+background-position: center;
+transition: 3s all;
+}
+.page01_se.on{
+    background-color: white;
+    background: url(#);
+}
+.page01{width: 1200px; margin: 0 auto;
+            height: 500px;
+        }
+
+.page01_content{width: 100%;
+    position: relative;
+    height: 500px;}
+.page01_title{ text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+z-index: 999;
+
+color: #f8f8f8;
+}
+
+.page01_content .page01_list li{
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    text-align: center;
+    opacity: 0;
+    transition: 2s all;
+}
+.page01_content .page01_list li img{width: 100%;
+    height: 100%;
+}
+
+
+.page01_content .page01_list li:nth-child(1).on{
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    margin-left: 20px;
+    position: absolute;
+    left: 0%;
+    transition: 2s all;
+    opacity: 1;
+    top: 20%;
+  
+}
+.page01_content .page01_list li:nth-child(2).on{
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    margin-left: 20px;
+    position: absolute;
+    left: 25%;
+    transition: 3s all;
+    opacity: 1;
+    top: 20%;
+
+
+
+}
+.page01_content .page01_list li:nth-child(3).on{
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    margin-left: 20px;
+    position: absolute;
+    left: 50%;
+    transition: 3s all;
+    opacity: 1;
+    top: 20%;
+  
+}
+    .page01_content .page01_list li:nth-child(4).on{
+        width: 270px;
+        height: 300px;
+        text-align: center;
+        margin-left: 20px;
+        top: 20%;
+        position: absolute;
+        left:75%;
+    transition: 2s all;
+    opacity: 1;
+     
+    }
+    .page01_list li.color{
+        transition: 0.7s all;
+        border: 1px solid rgb(136, 129, 129)
+
+    }
+    
+
+    .page02_se{width: 100%;
+            background-color: #ccc;
+        }
+
+    .page02{width: 1200px; margin: 0 auto;
+                height: 500px;
+                background-color: green;
+    }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            nav_menu()
+            function nav_menu(){
+                $('.nav_in li').hover(function(){
+            var n = $(this).index()
+            $('.nav_in li').eq(n).addClass('on')  
+        },
+        function(){$('.nav_in li').removeClass('on')}
+        
+        )
+    
+    }
+
+    $('.page01_title').click(function(){
+        $('.page01_list li').addClass('on')
+        $('.page01_title').fadeOut(1500)
+        $('.page01_se').addClass('on')
+        $('.page01_list li').hover(function(){
+          var q= $(this).index()
+          console.log(q)
+        $('.page01_list li').eq(q).addClass('color')
+        },function(){
+        $('.page01_list li').removeClass('color')
+
+        }
+        
+        )
+    })
+        $('.page01_se').mouseleave(function(){
+            $('.page01_list li').removeClass('on')
+            $('.page01_title').fadeIn(1500)
+        $('.page01_se').removeClass('on')
+            
+        })
+        })
+
+
+    </script>
+  
+</head>
+<body>
+    <div dir="wrap">
+        <header>
+            <div class="header_in">
+                <h1 class="header_logo">logo</h1>
+                <nav>
+                    <ul class="nav_in">
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+
+                     
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main">
+            <section class="page01_se">
+              <div class="page01">
+                <h1 class="page01_title">
+                    Click</h1>
+                    <div class="page01_content">
+                        <ul class="page01_list">
+                            <li>
+                                <img src="/img/cerrywa.jpg">
+                            </li>
+                            <li>
+                                <img src="/img/chcc.jpg">
+
+
+                            </li>
+                            <li>
+                                <img src="/img/cherries-g8074e405d_1280.jpg">
+
+                            </li>
+                            <li>
+                                <img src="/img/cherryjem.jpg">
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+              </div>  
+            </section>
+            <section class="page02_se">
+                <div class="page02">
+                
+
+                </div>
+                
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>
